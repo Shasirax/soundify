@@ -15,3 +15,8 @@ const soundifyApp = {
 	],
 };
 
+const songLength = (song) => {
+	return song.seconds;
+}
+
+console.log(songLength(soundifyApp.artists[0].album[0].songs[1]));
