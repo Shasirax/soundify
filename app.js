@@ -2,7 +2,7 @@ const soundifyApp = {
 	artists: [
 		{
 			name: "Luna",
-			album: [
+			albums: [
 				{
 					title: "Midnight Sessions",
 					songs: [
@@ -16,7 +16,22 @@ const soundifyApp = {
 };
 
 const songLength = (song) => {
-	return song.seconds;
+		return song.seconds;
 }
 
-console.log(songLength(soundifyApp.artists[0].album[0].songs[1]));
+console.log(songLength(soundifyApp.artists[0].albums[0].songs[1]));
+
+const totalLength = (artists) => {
+	let total = 0
+	artists.forEach((artist) => {
+		artist.albums.forEach((album) => {
+			album.songs.forEach((song) => {
+				total += song.seconds
+			})
+		})
+	}) 
+	
+	return total
+}
+
+console.log(totalLength(soundifyApp.artists))
