@@ -35,3 +35,14 @@ const totalLength = (artists) => {
 }
 
 console.log(totalLength(soundifyApp.artists))
+
+
+let newSong = {nr: 3, title: "Moonfall", seconds: 200}
+
+const addToAlbum = (song, album) => {
+	album.push(song)
+}
+
+addToAlbum(newSong, soundifyApp.artists[0].albums[0].songs)
+
+console.log(soundifyApp)
