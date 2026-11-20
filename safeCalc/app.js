@@ -6,7 +6,7 @@ const divide = (a, b) => {
 }
 
 try {
-	console.log(divide(3,1556161));
+	console.log(divide(3,5));
 } catch (error) {
 	console.log(error.message);
 } finally {
