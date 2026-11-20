@@ -20,7 +20,9 @@ const songLength = (song) => {
   return song.seconds;
 };
 
-console.log(songLength(soundifyApp.artists[0].albums[0].songs[1]));
+const starlight = songLength(soundifyApp.artists[0].albums[0].songs[1])
+
+console.log(starlight);
 
 
 //Task 2: Räkna Speltid
@@ -37,7 +39,9 @@ const totalLength = (artists) => {
   return total;
 };
 
-console.log(totalLength(soundifyApp.artists));
+const totalSekunder = totalLength(soundifyApp.artists)
+
+console.log(totalSekunder);
 
 
 //Task 3: Lägg till ny låt
